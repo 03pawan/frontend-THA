@@ -1,0 +1,25 @@
+#fform{
+    text-align: center;
+}
+
+button {
+  background-color: #a7c4bc;
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+p{
+    font-size: 1.5em;
+}
