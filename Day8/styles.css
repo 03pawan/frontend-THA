@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.center-box{
+    margin:100px;
+    display: grid;
+    grid-template-columns: repeat(20,1.5em);
+    grid-template-rows: repeat(20,1.5em);
+    border: solid;
+}
+
+.box{
+    background-color: #F54748;
+    border:1px solid;
+    border-color: #E24E3F;
+}
+
+.box:hover{
+    background: #EC5142;
+    border-color: #E24E3F;
+    cursor: pointer;
+}
+
+.colorChange{
+    background-color: white;
+    border: none;
+    
+}
+
+.colorChange:hover{
+    cursor: pointer;
+    background-color: white;
+}
