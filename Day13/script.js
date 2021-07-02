@@ -7,12 +7,18 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
 
     let search = input.value;
+    if (/\s/.test(search)){
+        input.value="";
+        return;
+    }
+    else{
     fetch(`https://api.github.com/users/${search}`)
         .then(res => res.json())
     .then(data => {
         displayDetails(data);
-        console.log(data);
-    })
+        // console.log(data);
+    })}
+    input.value="";
 })
 
 function displayDetails(data){
