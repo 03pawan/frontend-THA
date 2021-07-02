@@ -7,7 +7,7 @@ const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
 
     let search = input.value;
-    if (/\s/.test(search)){
+    if (/\s/.test(search) || search!=NULL){
         input.value="";
         return;
     }
