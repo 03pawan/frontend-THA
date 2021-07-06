@@ -2,6 +2,7 @@ let cardContainer = document.querySelector('.card-container');
 let numValue = [1, 2, 3, 4, 5, 6, 7, 8];
 let moves = document.querySelector('span');
 numValue = [...numValue, ...numValue];
+let flag=0;
 
 for (i = 1; i <= 16; i++) {
     let div = document.createElement('div');
@@ -22,13 +23,16 @@ let cardSelector = document.querySelectorAll('.card');
 
     cardSelector.forEach((card =>
     card.addEventListener('click', () => {  
-        if (firstCardFlip == false) {
+        if(flag==0){
+            if (firstCardFlip == false) {
                 card.classList.add('flipped');
                 firstCardFlip = true;
                 firstCardValue = card.innerHTML;
                 previousCard=card;
+                
             } else {
                 // gamePause=true;
+                flag=1;
                 noOfMoves++;
                 card.classList.add('flipped');
                 setTimeout(()=>{
@@ -43,12 +47,17 @@ let cardSelector = document.querySelectorAll('.card');
                     previousCard.classList.remove("flipped");
                     card.classList.remove('flipped');
                 }
-                
+                flag=0;
                     },1500)
                 firstCardFlip = false;
+                
             }
             moves.innerHTML=noOfMoves;
 
+        }
+        else
+            return;
+        
     }
     )))
 
