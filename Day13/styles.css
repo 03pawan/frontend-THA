@@ -1,0 +1,26 @@
+body{
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+    background-color: #171010;
+    color: #EEEEEE;
+}
+
+.top-div{
+    background-color:#A19882 ;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.details{
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 12%;
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    background-color: #EEEEEE;
+    color: black;
+    border-radius: 10px;
+}
