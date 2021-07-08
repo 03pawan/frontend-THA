@@ -24,6 +24,6 @@ btn.addEventListener('click', () => {
 function displayDetails(data){
     let div=document.createElement('div');
     div.classList.add('details');
-    div.innerHTML= "Name: "+data.name+'<br>'+"Username: "+data.login+'<br>'+"Followers: "+data.followers+'<br>'+"Following: "+data.following+'<br>' +`<a href="${data.html_url}" target="_blank" rel="noopener noreferrer"> Check Profile here</a>`;
+    div.innerHTML= "Name: "+data.name+'<br>'+"Username: "+data.login+'<br>'+"Followers: "+data.followers+'<br>'+"Following: "+data.following+'<br>' +`<a href="${data.html_url}" target="_blank" rel="noopener noreferrer"> Check Profile here</a><br>`;
     container.append(div);
 }

@@ -1,5 +1,5 @@
 body{
-    font-family: 'Encode Sans SC', sans-serif;
+    font-family: 'Encode Sans SC', sans-serif;  
     text-align: center;
     background-color: #171010;
     color: #EEEEEE;
@@ -15,7 +15,7 @@ body{
 
 .details{
     font-family: 'Noto Sans JP', sans-serif;
-    width: 12%;
+    width: 15%;
     margin: 20px;
     padding: 10px;
     text-align: left;
