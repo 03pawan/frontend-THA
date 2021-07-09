@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MemeCard  from './App'
+import ChessBoard from './App'
 
 
 ReactDOM.render(
     <div className='container'>
-    <MemeCard/>
-
+    <ChessBoard/>
     </div>,document.getElementById('root'));
