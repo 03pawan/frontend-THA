@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff1e6;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    height: 85vh;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #cb997e;
+    color: #f0efeb;
+}
