@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({ title, num, index, setCards, cards }){
+function CardsList({ title, num, index, setCards, cards }){
     function newCard(){
         var newCards = cards.filter((card,i)=> i !== index);
         setCards(newCards);
@@ -15,13 +15,13 @@ function Card({ title, num, index, setCards, cards }){
     );
 }
 
-export default function CardsList({menu,setCards}){
+export default function Card({menu,setCards}){
     return(
         <div>
             {menu.length !==0 ? (
                 menu.map((item,index)=>{
                     return (
-                        <Card 
+                        <CardsList 
                         title={item[0]}
                         num={item[1]}
                         key={index}
