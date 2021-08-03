@@ -11,6 +11,8 @@ const AddTodo = () => {
                 setItem(e.target.value);
             }}></input>
             <button type="button" class="btn btn-outline-primary" onClick={()=>{
+                if (item.trim() === "")
+                    return null;
                 dispatch(addItem({
                     title: item,
                     done: false 
