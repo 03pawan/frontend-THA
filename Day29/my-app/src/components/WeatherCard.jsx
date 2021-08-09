@@ -1,28 +1,13 @@
-import './index.css'
-import { useState} from 'react';
+import {useSelector} from "react-redux";
 
-function App() {
-
-  const [placeData, setPlaceDate] = useState({});
-  const [place, setPlace] = useState("Bangalore");
-  const updatePlaceData = () => {
-  fetch(`https://api.weatherapi.com/v1/current.json?key=e3f10f87064346f98bb135349210508&q=${place}`)
-  .then(res=>res.json())
-  .then(data => {
-    setPlaceDate(data);
-  })}
-  
- 
-  return (
-    <div className="App">
-      <div className="container">
-        <div className="row">
-          <div className="col-12 form">
-            <input type="text" onChange={(e)=>{setPlace(e.target.value)}}></input>
-            <button className="btn btn-primary" onClick={updatePlaceData}>Submit</button>
-          </div>
-          <div className="offset-md-4 col-4 ">
-            <div className="card">
+const WeatherCard = () => {
+    const theme = useSelector ((state)=>state.theme);
+    const placeData = useSelector(state => state.placeData);
+    return (
+    <div className='container'>
+        <div className='row'>
+        <div className="offset-md-4 col-4 ">
+            <div className={theme ? "card" : "card dark"}>
               {placeData.location ? (
                 <div>
                 <img src={placeData.current.condition.icon} alt="Icon"></img>
@@ -51,11 +36,10 @@ function App() {
                 </div>
               ):<h2> Place Not Found </h2>}
             </div>
-          </div>
         </div>
-      </div>
+        </div>
     </div>
-  );
+    );
 }
 
-export default App;
+export default WeatherCard;

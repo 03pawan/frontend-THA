@@ -1,0 +1,93 @@
+*{
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+.App.dark{
+  background-color: black;
+  color: white;
+}
+
+.App{
+  height: 100vh;
+  text-align: center;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+button{
+  margin-left:10px ;
+}
+
+input{
+  padding: 2px;
+}
+
+
+.card{
+  margin-top: 50px;
+  transform:
+    perspective(800px)
+    rotateY(-8deg);
+  transition: transform 1s ease 0s;
+  border-radius: 4px;
+  box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 20px 30px 0px;
+
+ 
+}
+.card.dark{
+  background-color: rgb(27,27,27);
+}
+.card img{
+  width: 30%;
+  margin-top: 20px;
+}
+
+.card .place{
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin: 10px 0;
+}
+
+.card .temp{
+  font-size: 4rem;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.whp{
+  margin: 20px 0px;
+}
+
+.whp .title{
+  font-size: 0.8rem;
+}
+
+.whp .data{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.whp .data .unit{
+  font-size: 0.8;
+}
+
+.cond{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.toggle-theme{
+  position: fixed;
+  top: 10px;
+  left: 700px;
+}
