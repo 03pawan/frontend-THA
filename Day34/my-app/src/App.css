@@ -1,0 +1,32 @@
+.App{
+  /* margin-left: 30%;
+  margin-right: 30%; */
+  margin-top:100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+input{
+  margin:10px;
+  padding:5px;
+  height: 2rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+button{
+  margin:10px;
+  height: 40px;
+  width: 50px;
+}
+
+h3{
+  display : inline-block;
+}
+
+.notes button{
+  margin:10px;
+  height: 30px;
+ 
+}
